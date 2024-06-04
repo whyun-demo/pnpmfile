@@ -1,0 +1,2 @@
+# pnpmfile
+pnpm file demo
