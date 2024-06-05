@@ -4,7 +4,7 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-pnpmfileChecksum: uyunsyed5w36m6iwig5pzdwd7y
+pnpmfileChecksum: oldejxl4j5k7ioj45lklkdo6ta
 
 importers:
 
@@ -17,10 +17,14 @@ importers:
 packages:
 
   typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==, tarball: https://registry.npmmirror.com/typescript/-/typescript-5.4.5.tgz}
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
     engines: {node: '>=14.17'}
     hasBin: true
+    peerDependencies:
+      typescript: 4.9.5
 
 snapshots:
 
-  typescript@5.4.5: {}
+  typescript@5.4.5:
+    dependencies:
+      typescript: 5.4.5
