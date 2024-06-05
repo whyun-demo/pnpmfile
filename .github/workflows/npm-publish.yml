@@ -4,14 +4,8 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
-  # workflow_run:
-  #   workflows: ["CI"]
-  #   tags:
-  #     - "v*.*.*"
-  #   types: 
-  #     - completed
+  push:
+
 
 jobs:
   publish-npm:
