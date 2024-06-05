@@ -25,7 +25,9 @@ jobs:
         with:
           version: 9
           run_install: true
-      - uses: simenandre/publish-with-pnpm@v2
-        with:
-          npm-auth-token: ${{ secrets.NPM_TOKEN }}
+      - name: publish
+        run: |
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       
